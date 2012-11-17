@@ -1,0 +1,88 @@
+/**
+ * 
+ */
+package com.akhi.app.listener;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+import org.apache.log4j.Logger;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.akhi.app.cdm.Tasks;
+import com.akhi.app.cdm.UserDetails;
+
+/**
+ * @author akhilesh
+ *
+ */
+public class HibernateListener implements ServletContextListener
+    {
+    private SessionFactory     factory;
+   
+    private static Logger      log      = Logger.getLogger(HibernateListener.class);
+
+    public static final String KEY_NAME = "factory";
+
+    @Override
+    public void contextDestroyed( ServletContextEvent event )
+	{
+	// TODO Auto-generated method stub
+
+	}
+
+    @SuppressWarnings("deprecation")
+    @Override
+    public void contextInitialized( ServletContextEvent event )
+	{
+	UserDetails user = new UserDetails();
+	Session session = null;
+	user.setUserId("akhi");
+	user.setFirstName("Akhilesh");
+	user.setLastName("Gupta");
+	user.setPassword("password");
+	Tasks task = new Tasks();
+	task.setConsequence("Fine Of rs 10000");
+	task.setGracePeriod(10);
+	task.setPeriodicity(2);
+	task.setTaskName("DEPOT-P.TAX");
+	task.setTaskDescription("PAYMENT OF PROFESSIONAL TAX(BIHAR PROFESSIONAL TAX ACT 2011)");
+	try
+	    {
+	    factory = new Configuration().configure().buildSessionFactory();
+	    session = factory.openSession();
+	    session.beginTransaction();
+	    session.save(user);
+	    session.save(task);
+	    session.getTransaction().commit();
+	    event.getServletContext().setAttribute(KEY_NAME, factory);
+	    }
+	catch (Exception ex)
+	    {
+	    session.getTransaction().rollback();
+	    log.error(ex.getMessage());
+	    }
+	finally
+	    {
+	    session.close();
+	    }
+
+	}
+    /*	 try { 
+    	 log.info("Context intialised::::::::::::::::::::::::::::::::::::::::::::::::");
+    	 
+    	        URL url = HibernateListener.class.getResource(path);
+    	        config = new Configuration().configure(url);
+    	        factory = config.buildSessionFactory();
+
+    	        //save the Hibernate session factory into serlvet context
+    	        event.getServletContext().setAttribute(KEY_NAME, factory);
+    	  } catch (Exception e) {
+    	         System.out.println(e.getMessage());
+    	   }
+    	
+    	}*/
+
+    }
