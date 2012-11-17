@@ -3,8 +3,11 @@
  */
 package com.akhi.app.cdm;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +16,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -45,9 +49,13 @@ public class UserDetails
     @org.hibernate.annotations.Generated(value=GenerationTime.ALWAYS)
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastModified;
+    
     @ManyToOne 
     @JoinColumn(nullable=true,name="location_id")
     private Location location;
+    
+    @OneToMany(mappedBy="user",cascade=CascadeType.ALL)
+    Collection<FiledTask> filedTasks = new ArrayList<FiledTask>();
     
     @Lob
     private String description;

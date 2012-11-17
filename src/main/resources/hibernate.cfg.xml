@@ -15,5 +15,6 @@
         <mapping class="com.akhi.app.cdm.UserDetails"></mapping>
         <mapping class="com.akhi.app.cdm.Tasks"/>
         <mapping class="com.akhi.app.cdm.Location"/>
+         <mapping class="com.akhi.app.cdm.FiledTask"/>
     </session-factory>
 </hibernate-configuration>
