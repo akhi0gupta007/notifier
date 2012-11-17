@@ -14,6 +14,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
+import com.akhi.app.cdm.FiledTask;
 import com.akhi.app.cdm.Location;
 import com.akhi.app.cdm.Tasks;
 import com.akhi.app.cdm.UserDetails;
@@ -62,9 +63,12 @@ public class Startup {
 			location.setTaskList(taskList);
 			task.setLocationId(location);
 			user.setLocation(location);
+			FiledTask file = new FiledTask();
+			file.setTask(task);
+			file.setUser(user);
 			assertNotNull(session.save(user));
 			assertNotNull(session.save(location));
-			//assertNotNull(session.save(task));
+			assertNotNull(session.save(file));
 			session.getTransaction().commit();
 			session.close();
 			user = null;
@@ -83,7 +87,7 @@ public class Startup {
 			location = (Location) session.get(Location.class,1L);
 			Collection<Tasks> coll = location.getTaskList();
 			assertEquals("Size of Collection should be 1 ",1,coll.size());
-			session.save(user);
+			session.update(user);
 			session.getTransaction().commit();
 			session.close();
 

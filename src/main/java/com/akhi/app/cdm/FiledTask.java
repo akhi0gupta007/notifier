@@ -30,9 +30,11 @@ public class FiledTask {
 	@ManyToOne
 	@JoinColumn(nullable = false, name = "taskId")
 	private Tasks task;
-	
+	@Column(nullable=true)
 	private String attachment;
+	@Column(nullable=true)
 	private String remarks;
+	 @Column(nullable=true)
 	private String noAttachment;
 	
 	@ManyToOne
