@@ -151,10 +151,15 @@
 			<version>1.2.16</version>
 		</dependency>
 
-			<dependency>
+		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-commons-annotations</artifactId>
 			<version>3.2.0.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-tiles-plugin</artifactId>
+			<version>2.3.4.1</version>
 		</dependency>
 
 
@@ -168,6 +173,7 @@
 				<version>6.1.21</version>
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
+					<webDefaultXml>src/main/resources/webdefault.xml</webDefaultXml>
 				</configuration>
 			</plugin>
 			<plugin>
