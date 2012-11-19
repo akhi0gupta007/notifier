@@ -18173,3 +18173,208 @@ Caused by: java.lang.NoClassDefFoundError: org/apache/jsp/user/pages/login_jsp (
 22:54:21,063  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-plugin.xml]
 22:54:21,078  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts.xml]
 22:54:27,587  INFO WelcomeUserAction:40 - Hibernate Session Factory initialised 
+23:28:52,989  INFO Version:41 - HHH000412: Hibernate Core {4.1.1}
+23:28:52,998  INFO Environment:239 - HHH000206: hibernate.properties not found
+23:28:53,000  INFO Environment:342 - HHH000021: Bytecode provider name : javassist
+23:28:53,030  INFO Configuration:1923 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+23:28:53,031  INFO Configuration:1942 - HHH000040: Configuration resource: /hibernate.cfg.xml
+23:28:53,054  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+23:28:53,081  INFO Configuration:2064 - HHH000041: Configured SessionFactory: null
+23:28:53,301  INFO DriverManagerConnectionProviderImpl:90 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+23:28:53,307  INFO DriverManagerConnectionProviderImpl:110 - HHH000115: Hibernate connection pool size: 20
+23:28:53,308  INFO DriverManagerConnectionProviderImpl:113 - HHH000006: Autocommit mode: false
+23:28:53,309  INFO DriverManagerConnectionProviderImpl:127 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/notifier]
+23:28:53,309  INFO DriverManagerConnectionProviderImpl:132 - HHH000046: Connection properties: {user=root, password=****}
+23:28:53,555  INFO Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:28:53,565  INFO LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+23:28:53,577  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+23:28:53,583  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+23:28:53,810  INFO SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+23:28:57,348  INFO SchemaExport:406 - HHH000230: Schema export complete
+23:28:57,680  INFO BasicTilesContainer:125 - Initializing Tiles2 container. . .
+23:28:57,742  INFO BasicTilesContainer:409 - Tiles2 container initialization complete.
+23:28:57,744  INFO TilesAccess:95 - Publishing TilesContext for context: org.mortbay.jetty.handler.ContextHandler$Context
+23:28:57,851  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-default.xml]
+23:28:58,444  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-plugin.xml]
+23:28:58,471  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts.xml]
+23:29:29,623  INFO WelcomeUserAction:40 - Hibernate Session Factory initialised 
+23:29:41,398  INFO TilesAccess:90 - Removing TilesContext for context: org.mortbay.jetty.handler.ContextHandler$Context
+23:49:32,304  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+23:49:32,315  INFO Version:41 - HHH000412: Hibernate Core {4.1.1}
+23:49:32,318  INFO Environment:239 - HHH000206: hibernate.properties not found
+23:49:32,320  INFO Environment:342 - HHH000021: Bytecode provider name : javassist
+23:49:32,343  INFO Configuration:1923 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+23:49:32,343  INFO Configuration:1942 - HHH000040: Configuration resource: /hibernate.cfg.xml
+23:49:32,367  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+23:49:32,394  INFO Configuration:2064 - HHH000041: Configured SessionFactory: null
+23:49:32,633  INFO DriverManagerConnectionProviderImpl:90 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+23:49:32,640  INFO DriverManagerConnectionProviderImpl:110 - HHH000115: Hibernate connection pool size: 20
+23:49:32,640  INFO DriverManagerConnectionProviderImpl:113 - HHH000006: Autocommit mode: false
+23:49:32,641  INFO DriverManagerConnectionProviderImpl:127 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/notifier]
+23:49:32,643  INFO DriverManagerConnectionProviderImpl:132 - HHH000046: Connection properties: {user=root, password=****}
+23:49:32,869  INFO Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:49:32,879  INFO LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+23:49:32,892  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+23:49:32,899  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+23:49:33,111  INFO SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+23:49:36,046  INFO SchemaExport:406 - HHH000230: Schema export complete
+23:49:36,353  INFO BasicTilesContainer:125 - Initializing Tiles2 container. . .
+23:49:36,423  INFO BasicTilesContainer:409 - Tiles2 container initialization complete.
+23:49:36,425  INFO TilesAccess:95 - Publishing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
+23:49:36,535  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-default.xml]
+23:49:37,191  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-plugin.xml]
+23:49:37,202  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts.xml]
+23:53:40,321  INFO TilesAccess:90 - Removing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
+22:59:43,045  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+22:59:43,092  INFO Version:41 - HHH000412: Hibernate Core {4.1.1}
+22:59:43,095  INFO Environment:239 - HHH000206: hibernate.properties not found
+22:59:43,098  INFO Environment:342 - HHH000021: Bytecode provider name : javassist
+22:59:43,204  INFO Configuration:1923 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+22:59:43,205  INFO Configuration:1942 - HHH000040: Configuration resource: /hibernate.cfg.xml
+22:59:43,329  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:59:43,429  INFO Configuration:2064 - HHH000041: Configured SessionFactory: null
+22:59:44,399  INFO DriverManagerConnectionProviderImpl:90 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:59:44,445  INFO DriverManagerConnectionProviderImpl:110 - HHH000115: Hibernate connection pool size: 20
+22:59:44,447  INFO DriverManagerConnectionProviderImpl:113 - HHH000006: Autocommit mode: false
+22:59:44,448  INFO DriverManagerConnectionProviderImpl:127 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/notifier]
+22:59:44,450  INFO DriverManagerConnectionProviderImpl:132 - HHH000046: Connection properties: {user=root, password=****}
+22:59:45,400  INFO Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22:59:45,419  INFO LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+22:59:45,449  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:59:45,467  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:59:46,253  INFO SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+22:59:51,550  INFO SchemaExport:406 - HHH000230: Schema export complete
+22:59:52,140  INFO BasicTilesContainer:125 - Initializing Tiles2 container. . .
+22:59:52,476  INFO BasicTilesContainer:409 - Tiles2 container initialization complete.
+22:59:52,479  INFO TilesAccess:95 - Publishing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
+22:59:52,963  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-default.xml]
+22:59:53,336 ERROR Dispatcher:27 - Dispatcher initialization failed
+Unable to load configuration. - Class: java.net.AbstractPlainSocketImpl
+File: AbstractPlainSocketImpl.java
+Method: connect
+Line: 178 - java/net/AbstractPlainSocketImpl.java:178:-1
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:374)
+	at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:418)
+	at org.apache.struts2.dispatcher.ng.InitOperations.initDispatcher(InitOperations.java:69)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.init(StrutsPrepareAndExecuteFilter.java:51)
+	at org.mortbay.jetty.servlet.FilterHolder.doStart(FilterHolder.java:97)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.servlet.ServletHandler.initialize(ServletHandler.java:662)
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:140)
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:517)
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:467)
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130)
+	at org.mortbay.jetty.Server.doStart(Server.java:224)
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50)
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:441)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:383)
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210)
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184)
+	at org.apache.maven.plugin.DefaultPluginManager.executeMojo(DefaultPluginManager.java:490)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoals(DefaultLifecycleExecutor.java:694)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeStandaloneGoal(DefaultLifecycleExecutor.java:569)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoal(DefaultLifecycleExecutor.java:539)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeGoalAndHandleFailures(DefaultLifecycleExecutor.java:387)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.executeTaskSegments(DefaultLifecycleExecutor.java:348)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(DefaultLifecycleExecutor.java:180)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:328)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:138)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:362)
+	at org.apache.maven.cli.compat.CompatibleMain.main(CompatibleMain.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.codehaus.classworlds.Launcher.launchEnhanced(Launcher.java:315)
+	at org.codehaus.classworlds.Launcher.launch(Launcher.java:255)
+	at org.codehaus.classworlds.Launcher.mainWithExitCode(Launcher.java:430)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:375)
+Caused by: Unable to load jar:file:/C:/Users/akhilesh/.m2/repository/org/apache/struts/struts2-tiles-plugin/2.3.4.1/struts2-tiles-plugin-2.3.4.1.jar!/struts-plugin.xml - Class: java.net.AbstractPlainSocketImpl
+File: AbstractPlainSocketImpl.java
+Method: connect
+Line: 178 - java/net/AbstractPlainSocketImpl.java:178:-1
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:898)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:143)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:110)
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:168)
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:55)
+	... 45 more
+Caused by: struts.apache.org - Class: java.net.AbstractPlainSocketImpl
+File: AbstractPlainSocketImpl.java
+Method: connect
+Line: 178 - java/net/AbstractPlainSocketImpl.java:178:-1
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:115)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:893)
+	... 49 more
+Caused by: java.net.UnknownHostException: struts.apache.org
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:157)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:391)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:388)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:483)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:213)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:300)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:316)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:992)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:928)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:846)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1296)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:653)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startEntity(XMLEntityManager.java:1291)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.startDTDEntity(XMLEntityManager.java:1258)
+	at com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl.setInputSource(XMLDTDScannerImpl.java:260)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.dispatch(XMLDocumentScannerImpl.java:1151)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$DTDDriver.next(XMLDocumentScannerImpl.java:1047)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:960)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:488)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:568)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302)
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:113)
+	... 50 more
+23:01:54,293  INFO TilesAccess:90 - Removing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
+23:07:24,221  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+23:07:24,232  INFO Version:41 - HHH000412: Hibernate Core {4.1.1}
+23:07:24,234  INFO Environment:239 - HHH000206: hibernate.properties not found
+23:07:24,237  INFO Environment:342 - HHH000021: Bytecode provider name : javassist
+23:07:24,258  INFO Configuration:1923 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+23:07:24,259  INFO Configuration:1942 - HHH000040: Configuration resource: /hibernate.cfg.xml
+23:07:24,281  WARN DTDEntityResolver:74 - HHH000223: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+23:07:24,307  INFO Configuration:2064 - HHH000041: Configured SessionFactory: null
+23:07:24,552  INFO DriverManagerConnectionProviderImpl:90 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+23:07:24,558  INFO DriverManagerConnectionProviderImpl:110 - HHH000115: Hibernate connection pool size: 20
+23:07:24,559  INFO DriverManagerConnectionProviderImpl:113 - HHH000006: Autocommit mode: false
+23:07:24,560  INFO DriverManagerConnectionProviderImpl:127 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/notifier]
+23:07:24,563  INFO DriverManagerConnectionProviderImpl:132 - HHH000046: Connection properties: {user=root, password=****}
+23:07:24,802  INFO Dialect:122 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+23:07:24,811  INFO LobCreatorBuilder:94 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+23:07:24,823  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+23:07:24,829  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+23:07:25,040  INFO SchemaExport:344 - HHH000227: Running hbm2ddl schema export
+23:07:28,334  INFO SchemaExport:406 - HHH000230: Schema export complete
+23:07:28,644  INFO BasicTilesContainer:125 - Initializing Tiles2 container. . .
+23:07:28,727  INFO BasicTilesContainer:409 - Tiles2 container initialization complete.
+23:07:28,730  INFO TilesAccess:95 - Publishing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
+23:07:28,825  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-default.xml]
+23:07:33,752  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts-plugin.xml]
+23:07:33,786  INFO XmlConfigurationProvider:31 - Parsing configuration file [struts.xml]
+23:20:45,278  INFO WelcomeUserAction:40 - Hibernate Session Factory initialised 
+23:28:40,229  INFO TilesAccess:90 - Removing TilesContext for context: org.mortbay.jetty.servlet.Context$SContext
