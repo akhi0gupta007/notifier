@@ -37,6 +37,7 @@
 
 		<action name="Welcome" class="com.akhi.app.action.WelcomeUserAction">
 			<result name="SUCCESS" type="tiles">/success.tiles</result>
+			<result name="FAILURE" type="tiles">/customer.tiles</result>
 		</action>
 
 	</package>

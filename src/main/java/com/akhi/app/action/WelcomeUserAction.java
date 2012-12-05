@@ -1,25 +1,37 @@
 package com.akhi.app.action;
 
+import java.util.List;
+import java.util.Map;
+
 import org.apache.log4j.Logger;
+
 import javax.servlet.ServletContext;
 import org.apache.struts2.ServletActionContext;
+import org.apache.struts2.interceptor.SessionAware;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
 import com.akhi.app.cdm.UserDetails;
-import javax.servlet.http.HttpServletRequest;
+import com.opensymphony.xwork2.ActionSupport;
 
-public class WelcomeUserAction
+public class WelcomeUserAction extends ActionSupport implements SessionAware
     {
 
-    private static org.apache.log4j.Logger log = Logger.getLogger(WelcomeUserAction.class);
+    /**
+     * 
+     */
+    private static final long              serialVersionUID = 7564735574539146404L;
+
+    private static org.apache.log4j.Logger log              = Logger.getLogger(WelcomeUserAction.class);
 
     private String                         username;
-    
-    private String password;
-    
-    private String test;
-    
+
+    private String                         password;
+
+    private String                         test;
+
+    Map<String, Object>                    session;
 
     public String getUsername()
 	{
@@ -31,45 +43,89 @@ public class WelcomeUserAction
 	this.username = username;
 	}
 
-
     public String execute()
 	{
+	UserDetails user = null;
 	SessionFactory sessionFactory = null;
-	HttpServletRequest request = ServletActionContext.getRequest();
-	request.setAttribute("my","akhilesh");
-	log.info("Hibernate Session Factory initialised ");
+	String result = "FAILURE";
+
 	ServletContext context = ServletActionContext.getServletContext();
-	log.debug("Servlet Context :::::::::::: "+ context);
+	log.debug("Servlet Context :::::::::::: " + context);
+
 	sessionFactory = (SessionFactory) context.getAttribute("factory");
-	log.debug("Session Factory Initialised:::::::::::: "+ sessionFactory);
+	log.debug("Session Factory Initialised:::::::::::: " + sessionFactory);
 	Session session = sessionFactory.openSession();
 	session.beginTransaction();
-	UserDetails user = (UserDetails) session.get(UserDetails.class,1L);
-	log.debug("User Name " + user.getFirstName() + "" + user.getLastName());
-	this.setTest("akhilesh");
-	
+
+	Query query = session.createQuery("from UserDetails where userId = :user");
+	query.setParameter("user", this.getUsername());
+
+	if (query != null && query.list() != null && query.list().size() > 0)
+	    {
+	    log.info("List :::::::::::::::::::" + query.list());
+
+	    List<UserDetails> list = query.list();
+	    user = list.get(0);
+
+	    if (user.getPassword().equals(this.getPassword()))
+		{
+		result = "SUCCESS";
+		}
+	    else
+		{
+		result = "FAILURE";
+		addActionError("I don't know you, dont try to hack me!");
+		}
+
+	    }
+	else
+	    {
+	    addActionError("I don't know you, dont try to hack me!");
+	    }
+
+	if (result.equals("SUCCESS"))
+	    {
+	    log.info("User Authenticated :::::::::::::::::::");
+	    this.getSession().put("user", user);
+
+	    }
+
 	session.close();
-	return "SUCCESS";
+	return result;
 
 	}
 
     public String getPassword()
 	{
-	    return password;
+	return password;
 	}
 
     public void setPassword( String password )
 	{
-	    this.password = password;
+	this.password = password;
 	}
 
     public String getTest()
 	{
-	    return test;
+	return test;
 	}
 
     public void setTest( String test )
 	{
-	    this.test = test;
+	this.test = test;
+	}
+
+    /**
+     * @return the session
+     */
+    public Map<String, Object> getSession()
+	{
+	return session;
+	}
+
+    @Override
+    public void setSession( Map<String, Object> session )
+	{
+	this.session = session;
 	}
     }

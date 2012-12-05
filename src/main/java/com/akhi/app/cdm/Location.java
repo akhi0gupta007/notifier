@@ -22,36 +22,52 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "location")
-public class Location {
-	@Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
-    private long locationId;
-	@Column(nullable=false)
-	private String locationName;
-	@Lob
-	private String description;
-	@OneToMany(mappedBy="locationId",cascade=CascadeType.ALL)
-	private Collection<Tasks> taskList = new ArrayList<Tasks>();
-	@OneToMany(mappedBy="location")
-	private Collection<UserDetails> users = new ArrayList<UserDetails>();
-	
-	public String getLocationName() {
-		return locationName;
-	}
-	public void setLocationName(String locationName) {
-		this.locationName = locationName;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	public Collection<Tasks> getTaskList() {
-		return taskList;
-	}
-	public void setTaskList(Collection<Tasks> taskList) {
-		this.taskList = taskList;
+public class Location
+    {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long                    locationId;
+
+    @Column(nullable = false)
+    private String                  locationName;
+
+    @Lob
+    private String                  description;
+
+    @OneToMany(mappedBy = "locationId", cascade = CascadeType.ALL)
+    private Collection<Tasks>       taskList = new ArrayList<Tasks>();
+
+    @OneToMany(mappedBy = "location")
+    private Collection<UserDetails> users    = new ArrayList<UserDetails>();
+
+    public String getLocationName()
+	{
+	return locationName;
 	}
 
-}
+    public void setLocationName( String locationName )
+	{
+	this.locationName = locationName;
+	}
+
+    public String getDescription()
+	{
+	return description;
+	}
+
+    public void setDescription( String description )
+	{
+	this.description = description;
+	}
+
+    public Collection<Tasks> getTaskList()
+	{
+	return taskList;
+	}
+
+    public void setTaskList( Collection<Tasks> taskList )
+	{
+	this.taskList = taskList;
+	}
+
+    }

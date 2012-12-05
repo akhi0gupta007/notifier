@@ -3,11 +3,27 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/tabtastic.css" />
-
+<style type="text/css">
+.errors {
+	background-color:#FFCCCC;
+	border:1px solid #CC0000;
+	width:400px;
+	margin-bottom:8px;
+}
+.errors li{ 
+	list-style: none; 
+}
+</style>
 </head>
 <body>
 <div align="center" id="login">
 <h2>User Login Here</h2>
+ 
+<s:if test="hasActionErrors()">
+   <div class="errors">
+      <s:actionerror/>
+   </div>
+</s:if>
 
 <s:form action="Welcome">
 	<s:textfield name="username" label="Username"/>
